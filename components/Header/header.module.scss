@@ -1,0 +1,17 @@
+$knollLogoBlue: #0605E8;
+
+.header_section {
+    display:flex;
+    justify-content: space-between;
+    background: $knollLogoBlue;
+    padding: 10px;
+}
+
+.hamburger {
+    min-height: 100%;
+    min-width: 20px;
+    color: white;
+    margin: 0 10px;
+    background: $knollLogoBlue;
+}
+

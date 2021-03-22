@@ -1,0 +1,34 @@
+$knollLogoBlue: #0605E8;
+
+.hamburger_nav {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger_list {
+    background: $knollLogoBlue;
+    width: inherit;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+
+.hamburger_items {
+    display: flex;
+    height: 48px;
+    width: inherit;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    list-style-type: none;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+    &:hover, &:focus {
+        background: white;
+        color: $knollLogoBlue;
+    }
+}

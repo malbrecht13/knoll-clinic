@@ -7,26 +7,23 @@ $knollLogoBlue: #0605E8;
     100% { opacity: 0;}
 }
 
-.carousel_text_center {
+@mixin commonCarousels() {
     text-align: center;
     font-size: 1rem;
     color: $knollLogoBlue;
     animation-name: fade;
     animation-duration: 7s;
     animation-iteration-count: infinite;
-    z-index: 1;
-    padding: 20px 5px;
+    padding: 20px 0;
     height: 60px;
+    text-shadow: 1px 1px 1px white;
+}
+
+.carousel_text_center {
+    @include commonCarousels();
 }
 
 .carousel_text_left {
-    text-align: center;
+    @include commonCarousels();
     max-width: 70vw;
-    font-size: 1rem;
-    height: 60px;
-    padding: 20px 5px;
-    color: $knollLogoBlue;
-    animation-name: fade;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
 }

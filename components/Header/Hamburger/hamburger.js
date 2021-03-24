@@ -5,19 +5,16 @@ import { useState, useEffect } from 'react'
 
 const pages = ['Home', 'Services', 'About Us', 'Info']
 
-export default function Hamburger() {
-    const [displayMenu, setDisplayMenu] = useState(true)
+export default function Hamburger(props) {
 
-    function handleNavClick() {
-        setDisplayMenu(false);
+    function closeMenu() {
+        props.onClick();
     }
 
-    
-
     return (
-        displayMenu && <nav className={styles.hamburger_nav} onClickCapture={handleNavClick}>
+        <nav className={styles.hamburger_nav} onBlur={closeMenu}>
             <div></div>
-            <ul className={styles.hamburger_list} >
+            <ul className={styles.hamburger_list}>
                 {pages.map(page => <li key={page} tabIndex='0' className={styles.hamburger_items}>{page}</li>)}
                 <li className={styles.hamburger_items}>
                     <a href="tel:785-625-5500">
@@ -25,6 +22,7 @@ export default function Hamburger() {
                         <FontAwesomeIcon
                             icon={faPhone}
                             tabIndex='0'
+                            onBlur={closeMenu}
                         />
                     </a>
                 </li>  

@@ -35,7 +35,7 @@ export default function Header() {
                 onClick={handleClick}/>
             </div>
         </header>
-        {displayMenu && <Hamburger/>}
+        {displayMenu && <Hamburger onClick={handleClick} />}
         <Carousel menuIsDisplayed={displayMenu}/>
         </>
         

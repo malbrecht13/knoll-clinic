@@ -1,0 +1,22 @@
+.testimonial_heading {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 30px auto;
+}
+
+.testimonial {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial_text {
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.testimonial_icon {
+    font-size: 4rem;
+}

@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header/header'
-import HeroImage from '../components/HeroImage/heroImage';
-import PhoneNumber from '../components/PhoneNumber/phoneNumber';
+import Main from '../components/Main/main'
 
 export default function Home() {
   return (
@@ -11,10 +10,7 @@ export default function Home() {
       </Head>
       <body>
         <Header/>
-        <main>
-          <HeroImage/>
-          <PhoneNumber />
-        </main>
+        <Main/>
       </body>
     </div>
   )

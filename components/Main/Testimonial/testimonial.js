@@ -13,7 +13,7 @@ export default function Testimonial({heading}) {
         <aside>
             <h4 className={styles.testimonial_heading}>What people are saying about Knoll Clinic...</h4>
             {testimonials.map(testimonial => (
-                <div className={styles.testimonial}>
+                <div className={styles.testimonial} key={testimonial.id}>
                 <p className={styles.testimonial_text}>{testimonial.text}</p>
                 <FontAwesomeIcon 
                 icon={testimonial.icon}

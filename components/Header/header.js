@@ -7,7 +7,7 @@ import {useState} from 'react';
 import Hamburger from './Hamburger/hamburger'
 import Carousel from './Carousel/carousel'
 
-export default function Header() {
+export default function Header({closeTheMenu}) {
     const [displayMenu, setDisplayMenu] = useState(false);
 
     function handleClick() {
@@ -17,6 +17,7 @@ export default function Header() {
             setDisplayMenu(true)
         }
     }
+
 
     return (
         <>
@@ -35,7 +36,7 @@ export default function Header() {
                 onClick={handleClick}/>
             </div>
         </header>
-        {displayMenu && <Hamburger onClick={handleClick} />}
+        {displayMenu && <Hamburger onClick={handleClick} menuIsDisplayed={displayMenu}/>}
         <Carousel menuIsDisplayed={displayMenu}/>
         </>
         

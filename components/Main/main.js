@@ -3,8 +3,10 @@ import PhoneNumber from './PhoneNumber/phoneNumber'
 import Testimonial from './Testimonial/testimonial'
 
 export default function Main() {
+
+    
     return (
-        <main>
+        <main >
           <HeroImage/>
           <PhoneNumber />
           <Testimonial />

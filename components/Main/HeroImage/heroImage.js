@@ -7,7 +7,7 @@ export default function HeroImage() {
         <div className={styles.hero_image_div}>
         <Image
             src="/knoll_clinic.png"
-            tabindex='0'
+            tabIndex='0'
             layout='responsive'
             width={980}
             height={338}

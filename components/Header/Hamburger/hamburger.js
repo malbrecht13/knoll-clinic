@@ -1,25 +1,18 @@
 import styles from './hamburger.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
-import {useRef, useState, useEffect} from 'react'
+import {useEffect} from 'react'
 
 const pages = ['Home', 'Services', 'About Us', 'Info']
 
 export default function Hamburger(props) {
-    const [menuDisplayed, setMenuDisplay] = useState(props.menuIsDisplayed);
 
-    const node = useRef();
-
-    function closeMenu(e) {
-        if(node.current.contains(e.target)) {
-            return;
-        }
-        setMenuDisplay(false);
-        props.onClick();
-    }
-
-    function menuClicked() {
-        props.onClick();
+    function closeMenu() {
+        //use a slight delay to close the menu so that you can follow the links
+        //in the menu if you click on them
+        setTimeout(() => {
+            props.onClick();
+        }, 10); 
     }
 
     useEffect(() => {
@@ -28,20 +21,17 @@ export default function Hamburger(props) {
         return () => {
             document.removeEventListener('mousedown', closeMenu);
         }
-    }, [menuDisplayed]);
-
-    
+    });
 
     return (
         <>
-        {menuDisplayed && <nav className={styles.hamburger_nav} ref={node}>
+        {props.menuIsDisplayed && <nav className={styles.hamburger_nav}>
             <div></div>
             <ul className={styles.hamburger_list} >
 
                 {pages.map(page => <li key={page} 
                 tabIndex='0' 
                 className={styles.hamburger_items}
-                onClick={menuClicked}
                 >{page}</li>)}
 
                 <li className={styles.hamburger_items}>
@@ -50,7 +40,7 @@ export default function Hamburger(props) {
                         <FontAwesomeIcon
                             icon={faPhone}
                             tabIndex='0'
-                            onBlur={menuClicked}
+                            onBlur={closeMenu}
                         />
                     </a>
                 </li>  

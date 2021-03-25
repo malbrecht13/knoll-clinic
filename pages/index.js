@@ -6,7 +6,7 @@ export default function Home() {
 
   
   return (
-    <div>
+    <>
       <Head>
         <title>The Knoll Clinic</title>
       </Head>
@@ -14,6 +14,6 @@ export default function Home() {
         <Header />
         <Main/>
       </body>
-    </div>
+    </>
   )
 }

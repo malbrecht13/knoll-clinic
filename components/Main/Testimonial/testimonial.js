@@ -7,7 +7,7 @@ const testimonial1 = {id: 1, text: '"Always friendly staff and compassionate car
 const testimonial2 = {id: 2, text: '"I have gone to Dr. Knoll for a few years and I appreciate that she was always really quick to get me in and there was little wait time. She has always been very kind and personable, I recommend her all the time."', icon: faHeart};
 const testimonials = [testimonial1, testimonial2];
 
-export default function Testimonial({heading}) {
+export default function Testimonial() {
 
     return (
         <aside>

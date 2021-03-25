@@ -7,7 +7,7 @@ import {useState} from 'react';
 import Hamburger from './Hamburger/hamburger'
 import Carousel from './Carousel/carousel'
 
-export default function Header({closeTheMenu}) {
+export default function Header() {
     const [displayMenu, setDisplayMenu] = useState(false);
 
     function handleClick() {
@@ -26,7 +26,7 @@ export default function Header({closeTheMenu}) {
                 src="/knoll_logo.jpg"
                 width={200}
                 height={24}
-                tabindex='0'
+                tabIndex='0'
             />
             <div>
                 <FontAwesomeIcon 

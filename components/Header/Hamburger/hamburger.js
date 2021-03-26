@@ -1,9 +1,15 @@
 import styles from './hamburger.module.scss'
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import {useEffect} from 'react'
 
-const pages = ['Home', 'Services', 'About Us', 'Info']
+const pages = [
+    {name: 'Home', route: '/'},
+    {name: 'Services', route: '/services'},
+    {name: 'About Us', route: '/about'},
+    {name: 'Info', route: '/info'}
+]
 
 export default function Hamburger(props) {
 
@@ -29,10 +35,12 @@ export default function Hamburger(props) {
             <div></div>
             <ul className={styles.hamburger_list} >
 
-                {pages.map(page => <li key={page} 
+                {pages.map(page => 
+                <Link href={page.route}><a><li key={page.name} 
                 tabIndex='0' 
                 className={styles.hamburger_items}
-                >{page}</li>)}
+                >{page.name}</li></a>
+                </Link>)}
 
                 <li className={styles.hamburger_items}>
                     <a href="tel:785-625-5500">

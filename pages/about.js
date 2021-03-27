@@ -1,11 +1,23 @@
 import Head from 'next/head'
 import Header from '../components/Header/header'
-import Main from '../components/Main/main'
+import TextSection from '../components/TextSection/textSection'
 import Footer from '../components/Footer/footer'
+import {useState, useEffect} from 'react';
 
 export default function About() {
+    const [text, setText] = useState('');
 
-  
+useEffect(() => {
+    const getText = async () => {
+        const response = await fetch('/Text/about.json');
+        const data = await response.json();
+        setText(data.about);
+     }
+     getText();
+},[]);
+
+const { title, body } = text;
+ 
   return (
     <>
       <Head>
@@ -13,7 +25,7 @@ export default function About() {
       </Head>
       <body>
         <Header />
-        <Main/>
+        <TextSection title={title} body={body}/>
         <Footer />
       </body>
     </>

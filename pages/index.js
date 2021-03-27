@@ -12,7 +12,7 @@ export default function Home() {
         <title>The Knoll Clinic</title>
       </Head>
       <body>
-        <Header />
+        <Header displayCarousel={true}/>
         <Main/>
         <Footer />
       </body>

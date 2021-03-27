@@ -7,7 +7,7 @@ import {useState} from 'react';
 import Hamburger from './Hamburger/hamburger'
 import Carousel from './Carousel/carousel'
 
-export default function Header() {
+export default function Header({displayCarousel}) {
     const [displayMenu, setDisplayMenu] = useState(false);
 
     function handleClick() {
@@ -23,7 +23,7 @@ export default function Header() {
         <>
         <header className={styles.header_section}>
             <Image
-                src="/knoll_logo.jpg"
+                src="/Images/knoll_logo.jpg"
                 width={200}
                 height={24}
                 tabIndex='0'
@@ -37,7 +37,7 @@ export default function Header() {
             </div>
         </header>
         {displayMenu && <Hamburger onClick={handleClick} menuIsDisplayed={displayMenu}/>}
-        <Carousel menuIsDisplayed={displayMenu}/>
+        {displayCarousel && <Carousel menuIsDisplayed={displayMenu}/>}
         </>
         
         

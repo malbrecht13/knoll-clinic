@@ -18,7 +18,7 @@ export default function Hamburger(props) {
         //in the menu if you click on them
         setTimeout(() => {
             props.onClick();
-        }, 10); 
+        }, 500); 
     }
 
     useEffect(() => {

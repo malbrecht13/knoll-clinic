@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Header from '../components/Header/header'
+import Mainlayout from '../components/Mainlayout/mainlayout'
 import TextSection from '../components/TextSection/textSection'
 import Footer from '../components/Footer/footer'
 import {useState, useEffect} from 'react';
+
+
 
 export default function About() {
     const [text, setText] = useState('');
@@ -23,11 +26,13 @@ const { title, body } = text;
       <Head>
         <title>Knoll Clinic -- About</title>
       </Head>
-      <body>
-        <Header />
+      
+      <Header />
+      <Mainlayout>
+        
         <TextSection title={title} body={body}/>
-        <Footer />
-      </body>
+      </Mainlayout>
+      <Footer />
     </>
   )
 }

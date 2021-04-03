@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header/header'
 import Main from '../components/Main/main'
+import Mainlayout from'../components/Mainlayout/mainlayout';
 import Footer from '../components/Footer/footer'
 
 export default function Services() {
@@ -11,11 +12,12 @@ export default function Services() {
       <Head>
         <title>Knoll Clinic -- Services</title>
       </Head>
-      <body>
-        <Header />
+
+      <Header />
+      <Mainlayout>
         <Main/>
-        <Footer />
-      </body>
+      </Mainlayout>
+      <Footer />
     </>
   )
 }

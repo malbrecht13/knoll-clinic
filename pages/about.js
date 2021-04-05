@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Header from '../components/Header/header'
 import Mainlayout from '../components/Mainlayout/mainlayout'
+import Providerprofiles from '../components/Providerprofiles/providerprofile'
 import TextSection from '../components/TextSection/textSection'
 import Footer from '../components/Footer/footer'
 import {useState, useEffect} from 'react';
-
 
 
 export default function About() {
@@ -29,7 +29,7 @@ const { title, body } = text;
       
       <Header />
       <Mainlayout>
-        
+        <Providerprofiles />
         <TextSection title={title} body={body}/>
       </Mainlayout>
       <Footer />

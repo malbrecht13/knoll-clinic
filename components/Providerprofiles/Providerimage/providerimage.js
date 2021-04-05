@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import styles from './provider.module.scss'
 
-const Providerimage = ({provider}) => {
+const Providerimage = ({provider, description, subdescription}) => {
     return (
-        <div className={styles.provider_image__container}>
+        <figure className={styles.provider_image__container}>
             <Image 
                 className={styles.provider_image__image}
                 src={`/Images/Providers/${provider}.jpg`}
@@ -12,6 +12,13 @@ const Providerimage = ({provider}) => {
                 height={275}
                 layout="responsive"
             />
-        </div>
+            <figcaption className={styles.provider_image_caption}>
+                {description}
+                <br/>
+                {subdescription}
+            </figcaption>
+        </figure>
     );
 }
+
+export default Providerimage;

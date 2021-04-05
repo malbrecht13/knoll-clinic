@@ -1,22 +1,25 @@
 $knollLogoBlue: #0605E8;
 
 @keyframes fade {
-    0% { opacity: 0;}
-    25% { opacity: 1;}
-    75% { opacity: 1;}
-    100% { opacity: 0;}
+    0% { opacity: 1; left: -500px;}
+    25% { opacity: 1; left: 0px; }
+    75% { opacity: 1; left: 0px; }
+    100% { opacity: 0; }
 }
 
 @mixin commonCarousels() {
     text-align: center;
     font-size: 1rem;
-    color: $knollLogoBlue;
+    color: #000066;
     animation-name: fade;
     animation-duration: 7s;
     animation-iteration-count: infinite;
-    padding: 20px 0;
+    padding: 20px 10px;
     height: 60px;
     text-shadow: 1px 1px 1px white;
+    position: relative;
+    font-style: italic;
+    font-size: 1.2rem;
 }
 
 .carousel_text_center {

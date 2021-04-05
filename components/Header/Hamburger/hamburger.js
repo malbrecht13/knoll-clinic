@@ -42,7 +42,7 @@ export default function Hamburger(props) {
                 >{page.name}</li></a>
                 </Link>)}
 
-                <li className={styles.hamburger_items}>
+                <li className={styles.hamburger_items} key="call">
                     <a href="tel:785-625-5500">
                         Call &nbsp;
                         <FontAwesomeIcon

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header/header'
-import Mainlayout from'../components/Mainlayout/mainlayout';
+import Mainlayout from '../components/Mainlayout/mainlayout';
+import Servicedropdown from '../components/Servicedropdown/servicedropdown'
 import Footer from '../components/Footer/footer'
 
 export default function Services() {
@@ -14,7 +15,7 @@ export default function Services() {
 
       <Header />
       <Mainlayout>
-        
+        <Servicedropdown/>
       </Mainlayout>
       <Footer />
     </>

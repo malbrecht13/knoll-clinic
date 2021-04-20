@@ -1,10 +1,12 @@
 import Head from 'next/head'
-import Header from '../components/Header/header'
-import Mainlayout from '../components/Mainlayout/mainlayout'
-import Footer from '../components/Footer/footer'
-import Listwithheader from '../components/Listwithheader/listwithheader'
-import Infoheader from '../components/InfoHeader/infoheader';
-import Contactform from '../components/ContactForm/contactform';
+import Header from '../components/Header/header.js'
+import Mainlayout from '../components/Mainlayout/mainlayout.js'
+import Footer from '../components/Footer/footer.js'
+import Listwithheader from '../components/Listwithheader/listwithheader.js'
+import Infoheader from '../components/InfoHeader/infoheader.js';
+import Contactform from '../components/ContactForm/contactform.js';
+
+
 
 const list = [
   { title: 'Hours', 

@@ -3,7 +3,7 @@ import styles from './infoheader.module.scss';
 const Infoheader = () => {
 
     //used for 'send us an email" link to scroll to contact_form on the contact page
-    const linkID = "contact_form";
+    const linkID = "contact_form_goto";
 
     const handleClick = (e) => {
         e.preventDefault();
@@ -13,7 +13,7 @@ const Infoheader = () => {
         //scrollIntoView parameters
         //first param: alignToTop (if true, aligns to top of linked area)
         //second param: scrollIntoViewOptions (options are behavior, block, and inline)
-        target.scrollIntoView({ behavior: 'smooth'});
+        target.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest'});
     }
 
     return (

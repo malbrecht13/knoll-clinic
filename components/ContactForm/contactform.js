@@ -27,14 +27,39 @@ const Contactform = () => {
             default:
                 return;
         }
+    };
+
+    const resetForm = () => {
+        setName('');
+        setEmail('');
+        setPhone('');
+        setComments('');
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(name, email, phone, comments);
+        alert("Email sent!");
+        resetForm();
+        // fetch('http://localhost:3003/send', {
+        //     method: "POST",
+        //     body: JSON.stringify({name, email, phone, comments}),
+        //     headers: {
+        //         'Accept': 'application/json',
+        //         'Content-Type': 'application/json'
+        //     },
+        // }).then(response => response.json())
+        //   .then(response => {
+        //       if(response.status === 'success') {
+        //           alert("Message sent");
+        //           resetForm();
+        //       } else if (response.status === 'fail') {
+        //           alert("Message failed to send.");
+        //       }
+        //   }).catch(err => console.log(err));
     };
 
     return (
+        <>
+        <div id="contact_form_goto"></div>
         <div className={styles.contact_form_container}>
             <h3 className={styles.email_us_form_title}>Email Us</h3>
             <form id="contact_form" onSubmit={handleSubmit} method="POST">
@@ -45,6 +70,7 @@ const Contactform = () => {
                 <Submitbutton text="Submit"/>
             </form>
         </div>
+        </>
     );
 }
 

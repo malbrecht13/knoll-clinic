@@ -7,9 +7,11 @@ export default function Main() {
 
     
     return (
+         <>
           <Addressbanner/>
           <HeroImage/>
           <PhoneNumber />
           <Testimonial />
+         </>
     );
 }

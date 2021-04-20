@@ -1,10 +1,12 @@
-$knollLogoBlue: #0605E8;
+$knollLogoBlue: #0000fe;
 
 .header_section {
     display:flex;
     justify-content: space-between;
     background: $knollLogoBlue;
-    padding: 10px;
+    padding: 15px 10px;
+    position: sticky;
+    top: -1px;
 }
 
 .hamburger {

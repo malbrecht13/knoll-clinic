@@ -1,4 +1,4 @@
-$knollLogoBlue: #0605E8;
+$knollLogoBlue: #0000fe;
 
 .hamburger_nav {
     margin-top: 0;
@@ -11,8 +11,9 @@ $knollLogoBlue: #0605E8;
     background: $knollLogoBlue;
     width: inherit;
     margin: 0;
+    margin-top: -1px;
     padding: 0;
-    position: absolute;
+    position: fixed;
     right: 0;
     z-index: 2;
 }

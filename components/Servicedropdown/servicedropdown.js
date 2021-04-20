@@ -1,7 +1,6 @@
 import styles from './servicedropdown.module.scss'
 import Serviceheader from './Serviceheader/serviceheader'
 import Servicelist from './Servicelist/servicelist'
-import Image from 'next/image'
 
 const services = [
     { 
@@ -35,7 +34,7 @@ const Servicedropdown = () => {
     return (
         <>
         <h2 className={styles.service_page_heading}>Knoll Clinic Services</h2>
-        <Image 
+        <img 
             src='/Images/service_image.jpg'
             alt='Provider service image'
             width={1920}

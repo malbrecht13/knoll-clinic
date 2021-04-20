@@ -1,5 +1,4 @@
 import styles from './header.module.scss';
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {useState} from 'react';
@@ -22,7 +21,7 @@ export default function Header({displayCarousel}) {
     return (
         <>
         <header className={styles.header_section}>
-            <Image
+            <img
                 src="/Images/knoll_logo.jpg"
                 width={200}
                 height={24}

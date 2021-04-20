@@ -5,7 +5,7 @@ import Servicedropdown from '../components/Servicedropdown/servicedropdown.js'
 import Footer from '../components/Footer/footer'
 
 
-export default function Services() {
+const Services = () => {
 
   
   return (
@@ -22,3 +22,5 @@ export default function Services() {
     </>
   )
 }
+
+export default Services;

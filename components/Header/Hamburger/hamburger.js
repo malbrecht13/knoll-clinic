@@ -36,7 +36,7 @@ export default function Hamburger(props) {
             <ul className={styles.hamburger_list} >
 
                 {pages.map(page => 
-                <Link href={page.route} key={page.name}><a><li  
+                <Link href={page.route} key={page.name} passHref><a><li  
                 tabIndex='0' 
                 className={styles.hamburger_items}
                 >{page.name}</li></a>

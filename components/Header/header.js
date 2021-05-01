@@ -5,6 +5,7 @@ import {useState} from 'react';
 
 import Hamburger from './Hamburger/hamburger'
 import Carousel from './Carousel/carousel'
+import Image from 'next/Image';
 
 export default function Header({displayCarousel}) {
     const [displayMenu, setDisplayMenu] = useState(false);
@@ -21,11 +22,12 @@ export default function Header({displayCarousel}) {
     return (
         <>
         <header className={styles.header_section}>
-            <img
+            <Image
                 src="/Images/knoll_logo.jpg"
-                width={200}
-                height={24}
+                width={523}
+                height={67}
                 tabIndex='0'
+
             />
             <div>
                 <FontAwesomeIcon 

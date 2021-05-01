@@ -1,4 +1,5 @@
 import styles from './infoheader.module.scss';
+import Image from 'next/Image';
 
 const Infoheader = () => {
 
@@ -19,8 +20,14 @@ const Infoheader = () => {
     return (
         <>
         <h2 className={styles.info_header}>Info/Contact</h2>
+            <Image 
+                src="/Images/knoll_lobby.jpeg"
+                alt="knoll clinic lobby photo"
+                width={320}
+                height={240}
+            />
             <div className={styles.email_link_container}>
-                <a className={styles.email_link} onClick={handleClick}>**Send us an e-mail**</a>
+                <a className={styles.email_link} onClick={handleClick}>Request Info</a>
             </div>
         </>
     )

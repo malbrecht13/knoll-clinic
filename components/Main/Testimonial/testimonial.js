@@ -20,6 +20,7 @@ export default function Testimonial() {
                 className={styles.testimonial_icon}/>
             </div>
             ))}
+            <h4>Use the menu at the top of the screen to see what else Knoll Clinic has to offer!</h4>
         </aside>
     );
 }

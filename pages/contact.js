@@ -23,7 +23,7 @@ export default function Info() {
   return (
     <>
       <Head>
-        <title>Knoll Clinic -- Contact</title>
+        <title>Knoll Clinic | Contact</title>
       </Head>
         <Header />
         <Mainlayout>

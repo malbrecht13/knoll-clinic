@@ -8,7 +8,8 @@ const pages = [
     {name: 'Home', route: '/'},
     {name: 'Services', route: '/services'},
     {name: 'About Us', route: '/about'},
-    {name: 'Contact', route: '/contact'}
+    {name: 'Contact', route: '/contact'},
+    {name: 'Forms', route: '/forms'}
 ]
 
 export default function Hamburger(props) {

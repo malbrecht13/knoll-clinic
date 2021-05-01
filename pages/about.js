@@ -24,7 +24,7 @@ const { title, body } = text;
   return (
     <>
       <Head>
-        <title>Knoll Clinic -- About</title>
+        <title>Knoll Clinic | About</title>
       </Head>
       
       <Header />

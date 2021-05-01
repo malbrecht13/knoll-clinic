@@ -10,7 +10,6 @@ const Providerimage = ({provider, description, subdescription}) => {
                 alt={provider}
                 width={204}
                 height={275}
-                layout="responsive"
             />
             <figcaption className={styles.provider_image_caption}>
                 {description}

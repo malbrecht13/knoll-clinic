@@ -1,9 +1,10 @@
-import styles from './provider.module.scss'
+import styles from './provider.module.scss';
+import Image from 'next/image';
 
 const Providerimage = ({provider, description, subdescription}) => {
     return (
         <figure className={styles.provider_image__container}>
-            <img
+            <Image
                 className={styles.provider_image__image}
                 src={`/Images/Providers/${provider}.jpg`}
                 alt={provider}

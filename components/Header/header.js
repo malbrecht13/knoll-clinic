@@ -5,7 +5,7 @@ import {useState} from 'react';
 
 import Hamburger from './Hamburger/hamburger'
 import Carousel from './Carousel/carousel'
-import Image from 'next/Image';
+import Image from 'next/image';
 
 export default function Header({displayCarousel}) {
     const [displayMenu, setDisplayMenu] = useState(false);

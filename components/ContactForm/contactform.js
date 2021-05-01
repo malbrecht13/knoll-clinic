@@ -37,9 +37,9 @@ const Contactform = () => {
     }
 
     const handleSubmit = (e) => {
+        resetForm();
         e.preventDefault();
         alert("Email sent!");
-        resetForm();
         // fetch('http://localhost:3003/send', {
         //     method: "POST",
         //     body: JSON.stringify({name, email, phone, comments}),

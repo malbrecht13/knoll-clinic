@@ -22,6 +22,10 @@ $knollLogoBlue: #0000fe;
     display: none;
 }
 
+.knoll_logo {
+    cursor: pointer;
+}
+
 @media only screen and (min-width: 768px) {
     .hamburger {
         display: none;

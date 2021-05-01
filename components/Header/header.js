@@ -30,13 +30,16 @@ export default function Header({displayCarousel}) {
     return (
         <>
         <header className={styles.header_section}>
+            <Link href="/" >
             <Image
                 src="/Images/knoll_logo.jpg"
+                alt="Knoll clinic logo"
                 width={523}
                 height={67}
                 tabIndex='0'
-
+                className={styles.knoll_logo}
             />
+            </Link> 
             <div>
                 <FontAwesomeIcon 
                 className={styles.hamburger}
@@ -47,8 +50,8 @@ export default function Header({displayCarousel}) {
             <div className={styles.header_nav}>
                 <ul className={styles.header_nav_list}>
                 {pages.map(page => (
-                    <Link href={page.route}>
-                        <li key={page.name} className={styles.header_nav_listitem}>{page.name}</li>
+                    <Link key={page.name} href={page.route}>
+                        <li className={styles.header_nav_listitem}>{page.name}</li>
                     </Link>
                 ))}
                 </ul>

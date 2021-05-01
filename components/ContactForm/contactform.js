@@ -39,7 +39,7 @@ const Contactform = () => {
     const handleSubmit = (e) => {
         resetForm();
         alert("Email sent!");
-        // e.preventDefault();
+        e.preventDefault();
 
         // fetch('http://localhost:3003/send', {
         //     method: "POST",

@@ -40,6 +40,7 @@ const Contactform = () => {
         resetForm();
         alert("Email sent!");
         e.preventDefault();
+        window.location.href = '/contact';
 
         // fetch('http://localhost:3003/send', {
         //     method: "POST",

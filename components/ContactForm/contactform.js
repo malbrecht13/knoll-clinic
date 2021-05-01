@@ -34,12 +34,13 @@ const Contactform = () => {
         setEmail('');
         setPhone('');
         setComments('');
-    }
+    };
 
     const handleSubmit = (e) => {
         resetForm();
-        e.preventDefault();
         alert("Email sent!");
+        // e.preventDefault();
+
         // fetch('http://localhost:3003/send', {
         //     method: "POST",
         //     body: JSON.stringify({name, email, phone, comments}),

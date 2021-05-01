@@ -4,7 +4,7 @@ $knollLogoBlue: #0605E8;
     0% { opacity: 1; left: -500px;}
     25% { opacity: 1; left: 0px; }
     75% { opacity: 1; left: 0px; }
-    100% { opacity: 0; }
+    100% { opacity: 0; display: none;}
 }
 
 @mixin commonCarousels() {

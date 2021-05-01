@@ -37,6 +37,7 @@ const Contactform = () => {
     }
 
     const handleSubmit = (e) => {
+        e.preventDefault();
         alert("Email sent!");
         resetForm();
         // fetch('http://localhost:3003/send', {

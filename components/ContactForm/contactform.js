@@ -40,7 +40,7 @@ const Contactform = () => {
         resetForm();
         alert("Email sent!");
         e.preventDefault();
-        window.location.href = '/contact';
+        window.location.href = 'https://knoll-clinic.vercel.app/contact';
 
         // fetch('http://localhost:3003/send', {
         //     method: "POST",

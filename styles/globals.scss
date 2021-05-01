@@ -2,20 +2,22 @@
 html,
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   color: #000066;
   border-color: #000066;
+  max-width: 1200px;
 }
 
 body {
     min-height: 100vh;
-    background-color: #D2E3F0;
+    background: linear-gradient(to top, #D2E3F0, white);
     font-family: Arial, sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 * {
@@ -30,6 +32,19 @@ img {
   height: auto;
   max-width: 100%;
 }
+
+@media only screen and (min-width: 1200px) {
+  body {
+    box-shadow: 2px 2px 2px black;
+  }
+
+  html {
+    padding: 20px 0;
+    margin: 0 auto;
+    background: linear-gradient(#D2E3F0, #0000fe,#D2E3F0);
+  }
+}
+
 
 
 

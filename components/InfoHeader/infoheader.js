@@ -20,14 +20,18 @@ const Infoheader = () => {
     return (
         <>
         <h2 className={styles.info_header}>Info/Contact</h2>
-            <Image 
-                src="/Images/knoll_lobby.jpeg"
-                alt="knoll clinic lobby photo"
-                width={320}
-                height={240}
-            />
+            <div className={styles.contact_image_container}>
+                <Image 
+                    src="/Images/knoll_lobby.jpeg"
+                    alt="knoll clinic lobby photo"
+                    width={600}
+                    height={450}
+                    layout='intrinsic'
+                    className={styles.contact_image}
+                />
+            </div>
             <div className={styles.email_link_container}>
-                <a className={styles.email_link} onClick={handleClick}>Request Info</a>
+                <a className={styles.email_link} onClick={handleClick}>***Request Info***</a>
             </div>
         </>
     )

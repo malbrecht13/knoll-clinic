@@ -20,3 +20,19 @@
 .testimonial_icon {
     font-size: 4rem;
 }
+
+.use_links_message {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .testimonial_heading {
+        font-size: 2rem;
+    }
+    .testimonial_text, .use_links_message {
+        font-size: 1.5rem;
+    }
+    .testimonial_icon {
+        font-size: 6rem;
+    }
+}

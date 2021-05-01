@@ -14,8 +14,9 @@ const HistoryFormContainer = ({forms}) => {
                             <Image 
                                 src={form.thumbnail}
                                 alt={form.name}
-                                width={100}
-                                height={130}
+                                width={200}
+                                height={260}
+                                className={styles.form_thumbnail_image}
                             />
                             <p className={styles.form_caption}>
                                 {form.name}

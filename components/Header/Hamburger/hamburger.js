@@ -4,15 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import {useEffect} from 'react'
 
-const pages = [
-    {name: 'Home', route: '/'},
-    {name: 'Services', route: '/services'},
-    {name: 'About Us', route: '/about'},
-    {name: 'Contact', route: '/contact'},
-    {name: 'Forms', route: '/forms'}
-]
 
-export default function Hamburger(props) {
+
+export default function Hamburger({pages, ...props}) {
 
     function closeMenu() {
         //use a slight delay to close the menu so that you can follow the links

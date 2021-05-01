@@ -3,7 +3,7 @@ $knollLogoBlue: #0605E8;
 .footer {
     background: $knollLogoBlue;
     display: flex;
-    padding: 30px;
+    padding: 20px 30px;
     justify-content: space-between;
     color: white;
     align-items: center;
@@ -22,4 +22,34 @@ $knollLogoBlue: #0605E8;
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+}
+
+.site_map {
+    display: none;
+
+    @media only screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 30vw;
+        max-width: 500px;
+        margin-top: -30px;
+    }
+}
+
+.site_map_heading {
+    font-size: 1.2rem;
+    align-self: flex-start;
+}
+
+.site_map_link_container {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+}
+
+.site_map_link {
+    font-size: 0.8rem;
 }

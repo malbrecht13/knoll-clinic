@@ -11,3 +11,12 @@
 .click_category_header {
     text-align: center;
 }
+
+@media only screen and (min-width: 768px) {
+    .service_page_heading {
+        font-size: 2.5rem;
+    }
+    .click_category_header {
+        font-size: 2rem;
+    }
+}

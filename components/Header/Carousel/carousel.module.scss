@@ -10,6 +10,12 @@ $knollLogoBlue: #0605E8;
     position: relative;
     font-style: italic;
     font-size: 1.2rem;
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 2.5rem;
+        padding: 10px;
+        height: 40px;
+    }
 }
 
 .carousel_text_center {

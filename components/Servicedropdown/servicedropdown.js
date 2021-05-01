@@ -33,7 +33,7 @@ const Servicedropdown = () => {
     
     return (
         <>
-        <h2 className={styles.service_page_heading}>Knoll Clinic Services</h2>
+        <h2 className={styles.service_page_heading}>Services</h2>
         <img 
             src='/Images/service_image.jpg'
             alt='Provider service image'

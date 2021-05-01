@@ -3,6 +3,9 @@
     margin-top: 3px;
 }
 
-.provider_image__image {
-    z-index: -1;
+.provider_image__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }

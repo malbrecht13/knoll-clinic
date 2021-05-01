@@ -1,5 +1,5 @@
 import styles from './infoheader.module.scss';
-import Image from 'next/Image';
+import Image from 'next/image';
 
 const Infoheader = () => {
 

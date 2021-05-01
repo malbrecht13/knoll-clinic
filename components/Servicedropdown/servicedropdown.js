@@ -41,7 +41,7 @@ const Servicedropdown = () => {
             height={1279}
             layout='responsive'
         />
-        <h3 className={styles.click_category_header}>Click a category below to expand its list of services</h3>
+        <h3 className={styles.click_category_header}>Click a category below to expand the list of services we offer</h3>
         <div className={styles.services_outer_container}>
             {services.map(service => {
                 return <div className={styles.service_container} 

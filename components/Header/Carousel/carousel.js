@@ -11,7 +11,8 @@ export default function Carousel({menuIsDisplayed}) {
 
     useEffect(() => {
         const next = (current + 1) % slides.length;
-        const id = setTimeout(() => setCurrent(next), 7000);
+        const id = setTimeout(() => 
+        setCurrent(next), 7000);
         return () => clearTimeout(id);
     }, [current]);
 

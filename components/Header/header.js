@@ -31,7 +31,7 @@ export default function Header({displayCarousel}) {
             />
             <div>
                 <FontAwesomeIcon 
-                className={styles.hamburger} 
+                className={styles.hamburger}
                 icon={faBars} 
                 tabIndex='0'
                 onClick={handleClick}/>

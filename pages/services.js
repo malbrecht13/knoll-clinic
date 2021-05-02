@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <>
       <Head>
-        <title>Knoll Clinic -- Services</title>
+        <title>Knoll Clinic | Services</title>
       </Head>
 
       <Header />
